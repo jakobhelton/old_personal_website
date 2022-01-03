@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<!-- cd C:\Users\jhelton\Downloads\website -->
+<!-- git add . -->
+<!-- git commit -m "first commit" -->
+<!-- git push heroku master -->
+
+<head>
+	<title>Jake Helton</title>
+	<link rel="shortcut icon" type="image/png" sizes="32x32" href="/images/white-black1.ico">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+</head>
+
+<style>
+	body {
+		font-family: 'IBM Plex Serif';
+		background: black;
+		margin: 0 15px;
+	}
+	.header {
+		text-align: center;
+		color: white;
+ 		font-size: 45px;
+		margin: 0;
+		padding: 50px;
+		border-bottom: 5px solid #fd800b;
+	}
+	h1 {
+		text-align: center;
+		color: white;
+		font-size: 25px;
+		margin: 25px 0;
+	}
+
+	.lightbackground {
+		background: rgba(80, 80, 80, 1);
+		margin: 0;
+		padding: 20px;
+		border-bottom: 5px solid #fd800b;
+	}
+	.darkbackground {
+		background: rgba(40, 40, 40, 1);
+		margin: 0;
+		padding: 20px;
+		border-bottom: 5px solid #fd800b;
+	}
+	.portrait {
+		float: right;
+		margin-left: 25px;
+		width: 20%;
+		border: 3px solid #ffffff;
+	}
+	.portrait:hover {
+		border: 3px solid #fd800b;
+	}
+	.text {
+		text-align: left;
+		color: white;
+		font-size: 20px;
+	}
+	a {
+  		color: #fd800b;
+  		text-decoration: inherit;
+		font-weight: bold;
+	}
+	a:hover {
+		color: white;
+		font-weight: bold;
+	}
+
+	@media (min-width: 500px) {
+		.portrait {
+			width: 20%;
+		}
+	}
+	@media (max-width: 300px) {
+		.header {
+			font-size: 30px;
+    		padding: 25px;
+		}
+		h1 {
+			font-size: 15px;
+		}
+	}
+</style>
+
+<body>
+	<div class="header"> JAKE HELTON </div>
+	<div class="lightbackground">
+		<div class="text">
+			<h1><strong> ABOUT ME </strong></h1>
+			<p> 
+			<a href="https://jakehelton.herokuapp.com/images/portrait.jpeg" target="_blank"><img class="portrait" src="/images/portrait.jpeg"></a>
+			My name is Jakob Helton and I am a first-year graduate student at the University of Arizona pursuing both an MS and PhD in Astronomy. I am broadly interested in observational extragalactic astrophysics and cosmology, but spend most of my time thinking about the evolution of galaxies' physical conditions across cosmic time. In the coming years, I will be working with the James Webb Space Telescope (JWST) on the JWST Advanced Deep Extragalactic Survey (JADES) to investigate the earliest phases of galaxy formation ever observed. In addition to my research, I am also a visual artist. I focus on photography and painting, but I have recently started creating digital images and movies. In the coming years, I am hoping to publish a photography book and get my work featured in an art exhibition.
+			<br></br>
+			You can take a look at my CV 
+			<a href="https://jakehelton.herokuapp.com/files/cv.pdf" target="_blank">here</a>,
+			or you can scroll down to learn some more about me! 
+			</p>
+		</div>
+	</div>
+
+	<div class="darkbackground">
+		<div class="text">
+			<h1><strong> EDUCATION </strong></h1>
+			<p> 
+				<a href="https://web.astro.princeton.edu/" target="_blank">Princeton University</a>
+				<br height='5'>
+				<strong>Degree of Bachelor of Arts (AB), 2017 - 2021</strong>
+				<br height='5'>
+				<strong>Relevant Coursework:</strong> Topics in Modern Astronomy (AST204), Classical Mechanics (PHY205), Quantum Mechanics (PHY208), Thermal Physics (PHY301), Advanced Electromagnetism (PHY304), General Relativity (AST301), Research Methods in Astrophysics (AST303), Cosmology (AST401), Stars and Star Formation (AST403), Probablity and Stochastic Systems (ORF309), Modern Statistics (AST505), Diffuse Matter in Space (AST517), Extragalactic Astronomy (AST522), and High-Energy Physics (PHY529).
+			</p>
+		</div>
+	</div>
+
+	<div class="lightbackground">
+		<div class="text">
+			<h1><strong> PROJECTS </strong></h1>
+			<p> 
+				<a href="https://web.astro.princeton.edu/" target="_blank">
+					Senior Thesis</a>
+				<br height='5'>
+				My third experience in astrophysical research was during the summer after my sophomore year at Princeton. During this summer, I began a research project in galaxy formation theory with Dr. Allison Strom from Carnegie Observatories that studied the physical conditions of intermediate redshift galaxies. I continued this research project throughout my junior and senior years at Princeton by creating spectral modeling code to fit the continuum and emission lines of galaxies, and by implementing photoionization modeling code to better understand the physical conditions of galaxies using emission line ratios. I found that the intermediate redshift galaxies we looked at were similar to galaxies in the local Universe, while still showing somewhat higher nebular ionization and excitation at fixed stellar mass. With this project, I was co-investigator on multiple successful proposals, resulting in seven nights of observing allocations on FIRE at the Magellan Telescopes and MOSFIRE at the Keck Telescopes. This project will result in a first-author publication (J. M. Helton et al., The physical conditions in 0.6 < z < 1.0 galaxies from LEGA-C, in preparation) and has already resulted in a poster presentation at the 235th AAS Meeting. 
+				<br></br>
+				<a href="https://web.astro.princeton.edu/" target="_blank">
+					Spring Junior Paper</a>
+				<br height='5'>
+				My second experience in astrophysical research was during the spring semester of my junior year at Princeton. During this semester, I completed a research project in observational cosmology with Prof. Jo Dunkley that examined the cosmological curvature parameter using measurements of the cosmic microwave background (CMB) power spectrum from the Atacama Cosmology Telescope (ACT). For this research project, I tested the general purpose Bayesian analysis code Cobaya and tested ACT CMB power spectrum likelihoods, while also creating cosmological parameter covariance matrices. I found that the Universe favors zero curvature to a one sigma accuracy of less than a few percent. This project contributed to a recent publication (S. Aiola et al., The Atacama Cosmology Telescope: DR4 Maps and Cosmological Parameters, 2020, JCAP, 12, 047).
+				<br></br>
+				<a href="https://web.astro.princeton.edu/" target="_blank">
+					Fall Junior Paper</a>
+				<br height='5'>
+				My first experience in astrophysical research was during the summer after my freshman year at Princeton. During this summer, I began a research project in galaxy formation theory with Prof. Sean Johnson and Prof. Jenny Greene that looked at the galactic and gaseous environments around some of the most luminous actively accreting supermassive black holes (quasars). I continued this research project throughout my sophomore and junior years at Princeton by creating a quasar light subtraction code to make better use of integral field spectroscopic data, and by implementing photoionization modeling code to better understand the physical conditions of ionized gas using emission line ratios. I found that for a particular quasar host system, interactions can produce cool gas structures on halo scales, while potentially facilitating quasar fueling. This project resulted in a first-author publication (J. M. Helton et al., Discovery and origins of giant optical nebulae surrounding quasar PKS0454-22, in review) and numerous presentations (an oral presentation at Drexel University's Quasar Day, a poster presentation at the Stanford Research Conference, a poster presentation at the Princeton Research Day, an oral presentation at Princeton's Galread, and a poster presentation at the 237th AAS Meeting).
+				<br></br>
+				<a href="http://jakehelton.herokuapp.com" target="_blank">Personal Website</a>
+				<br height='5'>
+				At HackPrinceton Spring 2018, I taught myself Javascript which allowed me to 
+				design, code, and deploy this personal website.
+				<br height='5'>
+			</p>
+		</div>
+	</div>
+	<div class="darkbackground">
+		<div class="text">
+			<h1><strong> CONTACT ME </strong></h1>
+			<p> 
+				<strong>Email : </strong>
+				<a href="mailto:jhelton@princeton.edu">jhelton@princeton.edu</a>
+				<br height='5'>
+				<strong>GitHub : </strong>
+				<a href="https://github.com/jakehelton" target="_blank">jakehelton</a>
+				<br height='5'>
+				<strong>YouTube : </strong>
+				<a href="https://www.youtube.com/channel/UCeW6Y2b5igWkbRLBIBbtGzQ" target="_blank">Jake Helton</a>
+				<br height='5'>
+				<strong>LinkedIn : </strong>
+				<a href="https://www.linkedin.com/in/jake-helton/" target="_blank">Jake Helton</a>
+				<br height='5'>
+				<strong>Instagram : </strong>
+				<a href="https://www.instagram.com/jakehelton_/" target="_blank">jakehelton_</a>
+			</p>
+		</div>
+	</div>
+	<div class="lightbackground">
+		<div class="text">
+			<h1><strong> MISCELLANEOUS </strong></h1>
+			<p> 
+				<ul>
+					<li>Princeton 2020 USRP 
+						<a href="https://jakehelton.herokuapp.com/files/Princeton2020_Final_Presentation.pdf" target="_blank">final presentation</a>. 
+					</li>
+					<li>My digital photography 
+						<a href="https://jakehelton.herokuapp.com/portfolio" target="_blank">portfolio</a>. 
+					</li>
+					<li>
+						<a href="https://jakehelton.herokuapp.com/snake" target="_blank">Snake</a>.
+					</li>
+					<li>
+						<a href="https://ui.adsabs.harvard.edu/search/q=(author%3A%22Helton%2C%20Jakob%20M%22%20AND%20year%3A2020-2021)&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank">ADS</a>.
+					</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+</body>
+
+</html>
