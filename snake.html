@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<!-- cd C:\Users\jhelton\Downloads\jakobhelton.github.io -->
+<!-- git add . -->
+<!-- git commit -m "..." -->
+<!-- git push -u origin -->
+
+<head>
+	<title>Snake</title>
+	<link rel="shortcut icon" type="image/png" sizes="32x32" href="/images/white-black1.ico">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+</head>
+
+<style>
+    body {
+		font-family: 'IBM Plex Serif';
+		background: black;
+		margin: auto;
+	}
+	.header {
+		text-align: center;
+		color: white;
+ 		font-size: 45px;
+		padding: 50px;
+		border-bottom: 5px solid #fd800b;
+	}
+	.darkbackground {
+		background: rgba(40, 40, 40, 1);
+		padding: 20px;
+		border-bottom: 5px solid #fd800b;
+	}
+	.text {
+		text-align: center;
+		color: white;
+		font-size: 20px;
+	}
+	canvas {
+		display: block;
+		margin: auto;
+		border: 5px solid white;
+	}
+</style>
+
+<body>
+	<div class="header"> SNAKE </div>
+	<div class="darkbackground">
+		<div class="text">
+			<p>
+				Please use W (up), A (left), S (down), and D (right) or the arrow keys to control 
+				the snake.
+				<br></br>
+				Your Score: <span id="count"></span>
+			</p>
+		</div>
+		<canvas id="snake" width="600" height="600"></canvas>
+		<script src="snake/snake.js"></script>
+	</div>
+</body>
+
+</html>
