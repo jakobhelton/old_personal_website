@@ -42,10 +42,11 @@
   		--n: 3; /* number of rows*/
   		--m: 3; /* number of columns */
   		--g: 10px; /* control the gap */
+  		--b: 2px; /* control the border */
 		
-  		border: 2px solid white;
-  		height: calc((100vh - (var(--n) - 1) * var(--g)) / var(--n));
-  		width: calc((100vw - (var(--m) - 1) * var(--g)) / var(--m));
+  		border: var(--b) solid white;
+  		height: calc((100vh - (var(--n) - 1) * var(--g) - 2 * var(--n) * var(--g)) / var(--n));
+  		width: calc((100vw - (var(--m) - 1) * var(--g) - 2 * var(--m) * var(--g)) / var(--m));
 	}
 	.images:hover{
   		border: 2px solid #fd800b;
@@ -54,8 +55,8 @@
   		--n: 3; /* number of rows*/
   		--m: 3; /* number of columns */
   		--g: 10px; /* control the gap */
-  		--h: calc((100vh - (var(--n) - 1) * var(--g)) / var(--n)); /* control the height */
-  		--w: calc((100vw - (var(--m) - 1) * var(--g)) / var(--m)); /* control the width */
+  		--h: calc((100vh - (var(--n) - 1) * var(--g) - 2 * var(--n) * var(--g)) / var(--n)); /* control the height */
+  		--w: calc((100vw - (var(--m) - 1) * var(--g) - 2 * var(--m) * var(--g)) / var(--m)); /* control the width */
 
   		display: grid;
   		gap: var(--g);
