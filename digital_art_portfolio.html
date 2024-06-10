@@ -9,7 +9,7 @@
 
 <style>
 	:root {
-  		--r: 3; /* number of rows*/
+  		--r: 3; /* number of rows */
   		--c: 3; /* number of columns */
   		--b: 2px; /* control the border */
   		--m: 10px; /* control the margin */
@@ -55,7 +55,7 @@
 	.gallery {
   		display: grid;
 		padding: var(--p) var(--p);
-  		height: calc(var(--c)*var(--w) + (var(--c) + 1)*var(--m));
+  		height: calc(var(--r)*var(--w) + (var(--r) + 1)*var(--m));
   		width: calc(var(--c)*var(--w) + (var(--c) - 1)*var(--m));
   		grid-template-columns: repeat(var(--c), auto);
   		gap: var(--m) var(--m);
