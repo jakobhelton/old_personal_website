@@ -43,6 +43,8 @@
 		border-bottom: 5px solid #fd800b;
 	}
 	.images{
+		margin: 0 0;
+		padding: 0 0;
   		border: var(--b) solid white;
   		height: var(--w);
   		width: var(--w);
@@ -52,8 +54,8 @@
 	}
 	.gallery {
   		display: grid;
-		margin: var(--p) var(--p);
-  		height: calc(var(--c)*var(--w) + (var(--c) - 1)*var(--m));
+		padding: var(--p) var(--p);
+  		height: calc(var(--c)*var(--w) + (var(--c))*var(--m));
   		width: calc(var(--c)*var(--w) + (var(--c) - 1)*var(--m));
   		grid-template-columns: repeat(var(--c), auto);
   		gap: var(--m) var(--m);
