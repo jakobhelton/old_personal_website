@@ -38,18 +38,18 @@
 	.lightbackground {
 		background: rgba(80, 80, 80, 1);
 		margin: 0;
-		padding: var(--p);
+		padding: 0;
 		border-bottom: 5px solid #fd800b;
 	}
 	.darkbackground {
 		background: rgba(40, 40, 40, 1);
 		margin: 0;
-		padding: var(--p);
+		padding: 0;
 		border-bottom: 5px solid #fd800b;
 	}
 	.images{
-		aspect-ratio: 1;
   		border: var(--b) solid white;
+  		height: var(--w);
   		width: var(--w);
 	}
 	.images:hover{
@@ -57,8 +57,9 @@
 	}
 	.gallery {
   		display: grid;
-  		width: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g));
+		padding: var(--p);
   		height: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g));
+  		width: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g));
   		grid-template-columns: repeat(var(--m), auto);
   		gap: var(--g);
 	}
