@@ -19,8 +19,8 @@
   		--b: 2px; /* control the border */
   		--m: 10px; /* control the margin */
   		--p: 20px; /* control the padding */
-  		--h: calc((100vh - (var(--r) - 1) * var(--m) - 2 * (var(--r) * var(--b) + 2 * var(--p) + var(--m))) / var(--r)); /* control the height */
-  		--w: calc((100vw - (var(--c) - 1) * var(--m) - 2 * (var(--c) * var(--b) + 2 * var(--p) + var(--m))) / var(--c)); /* control the width */
+  		--h: calc((100vh - (var(--r) - 1) * var(--m) - 2 * (var(--r) * var(--b) + var(--p) + 2 * var(--m))) / var(--r)); /* control the height */
+  		--w: calc((100vw - (var(--c) - 1) * var(--m) - 2 * (var(--c) * var(--b) + var(--p) + 2 * var(--m))) / var(--c)); /* control the width */
 	}
     	body {
 		font-family: 'IBM Plex Serif';
@@ -28,23 +28,23 @@
 		margin: 0 var(--m);
 	}
 	.header {
+ 		font-size: calc(2 * var(--p));
 		text-align: center;
 		color: white;
- 		font-size: calc(2 * var(--p));
-		margin: 0;
-		padding: calc(2 * var(--p));
+		margin: 0 0;
+		padding: calc(2 * var(--p)) calc(2 * var(--p));
 		border-bottom: 5px solid #fd800b;
 	}
 	.lightbackground {
 		background: rgba(80, 80, 80, 1);
-		margin: 0;
-		padding: 0;
+		margin: 0 0;
+		padding: 0 0;
 		border-bottom: 5px solid #fd800b;
 	}
 	.darkbackground {
 		background: rgba(40, 40, 40, 1);
-		margin: 0;
-		padding: 0;
+		margin: 0 0;
+		padding: 0 0;
 		border-bottom: 5px solid #fd800b;
 	}
 	.images{
@@ -57,11 +57,11 @@
 	}
 	.gallery {
   		display: grid;
-		padding: var(--p);
+		padding: var(--p) var(--p);
   		height: calc(var(--c)*var(--w) + (var(--c) - 1)*var(--m));
   		width: calc(var(--c)*var(--w) + (var(--c) - 1)*var(--m));
   		grid-template-columns: repeat(var(--c), auto);
-  		gap: var(--m);
+  		gap: var(--m) var(--m);
 	}
 </style>
 
