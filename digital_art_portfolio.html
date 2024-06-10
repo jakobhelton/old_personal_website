@@ -13,7 +13,16 @@
 </head>
 
 <style>
-    body {
+	:root {
+  		--n: 3; /* number of rows*/
+  		--m: 3; /* number of columns */
+  		--g: 10px; /* control the gap */
+  		--b: 2px; /* control the border */
+  		--p: 20px; /* control the padding */
+  		--h: calc((100vh - (var(--n) - 1) * var(--g) - 2 * var(--n) * var(--b) - 2 * var(--p)) / var(--n)); /* control the height */
+  		--w: calc((100vw - (var(--m) - 1) * var(--g) - 2 * var(--m) * var(--b) - 2 * var(--p)) / var(--m)); /* control the width */
+	}
+    	body {
 		font-family: 'IBM Plex Serif';
 		background: black;
 		margin: 0 15px;
@@ -21,47 +30,35 @@
 	.header {
 		text-align: center;
 		color: white;
- 		font-size: 45px;
+ 		font-size: 2 * var(--p);
 		margin: 0;
-		padding: 50px;
+		padding: 2 * var(--p);
 		border-bottom: 5px solid #fd800b;
 	}
 	.lightbackground {
 		background: rgba(80, 80, 80, 1);
 		margin: 0;
-		padding: 20px;
+		padding: var(--p);
 		border-bottom: 5px solid #fd800b;
 	}
 	.darkbackground {
 		background: rgba(40, 40, 40, 1);
 		margin: 0;
-		padding: 20px;
+		padding: var(--p);
 		border-bottom: 5px solid #fd800b;
 	}
 	.images{
-  		--n: 3; /* number of rows*/
-  		--m: 3; /* number of columns */
-  		--g: 10px; /* control the gap */
-  		--b: 2px; /* control the border */
-
 		aspect-ratio: 1;
   		border: var(--b) solid white;
-  		width: calc((100vw - (var(--m) - 1) * var(--g) - 2 * var(--m) * var(--g) - 40px) / var(--m));
+  		width: var(--w);
 	}
 	.images:hover{
-  		border: 2px solid #fd800b;
+  		border: var(--b) solid #fd800b;
 	}
 	.gallery {
-  		--n: 3; /* number of rows*/
-  		--m: 3; /* number of columns */
-  		--g: 10px; /* control the gap */
-  		--h: calc((100vh - (var(--n) - 1) * var(--g) - 2 * var(--n) * var(--g) - 40px) / var(--n)); /* control the height */
-  		--w: calc((100vw - (var(--m) - 1) * var(--g) - 2 * var(--m) * var(--g) - 40px) / var(--m)); /* control the width */
-
   		display: grid;
-		aspect-ratio: 1;
-  		width: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g));
-  		<!-- height: calc(var(--n)*var(--h) + (var(--n) - 1)*var(--g)); -->
+  		width: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g) + 2 * var(--m) * var(--b));
+  		height: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g) + 2 * var(--m) * var(--b));
   		grid-template-columns: repeat(var(--m), auto);
   		gap: var(--g);
 	}
