@@ -14,8 +14,8 @@
   		--b: 2px; /* control the border */
   		--m: 10px; /* control the margin */
   		--p: 20px; /* control the padding */
-  		--h: calc((100vh - (var(--r) - 1)*var(--m) - 2*(var(--r) * var(--b) + var(--p) + 1.5*var(--m)))/var(--r)); /* control the height */
-  		--w: calc((100vw - (var(--c) - 1)*var(--m) - 2*(var(--c) * var(--b) + var(--p) + 1.5*var(--m)))/var(--c)); /* control the width */
+  		--h: calc((100vh - 2*(var(--r)*(var(--m) + var(--b)) + var(--p) + var(--m)))/var(--r)); /* control the height */
+  		--w: calc((100vw - 2*(var(--c)*(var(--m) + var(--b)) + var(--p) + var(--m)))/var(--c)); /* control the width */
 	}
     	body {
 		font-family: 'IBM Plex Serif';
@@ -55,8 +55,8 @@
 	.gallery {
   		display: grid;
 		padding: var(--p) var(--p);
-  		height: calc((var(--r)*var(--w)/1.5 + (var(--r) + 7)*var(--m)));
-  		width: calc(var(--c)*var(--w) + (var(--c) - 1)*var(--m));
+  		height: calc((var(--r)*var(--w)/1.5 + 2*var(--r)*(var(--m) + var(--b))));
+  		width: calc(var(--c)*var(--w) + 2*var(--c)*(var(--m) + var(--b))));
   		grid-template-columns: repeat(var(--c), auto);
   		gap: var(--m) var(--m);
 	}
