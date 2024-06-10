@@ -30,9 +30,9 @@
 	.header {
 		text-align: center;
 		color: white;
- 		font-size: 2 * var(--p);
+ 		font-size: calc(2 * var(--p));
 		margin: 0;
-		padding: 2 * var(--p);
+		padding: calc(2 * var(--p));
 		border-bottom: 5px solid #fd800b;
 	}
 	.lightbackground {
@@ -57,8 +57,8 @@
 	}
 	.gallery {
   		display: grid;
-  		width: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g) + 2 * var(--m) * var(--b));
-  		height: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g) + 2 * var(--m) * var(--b));
+  		width: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g));
+  		height: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g));
   		grid-template-columns: repeat(var(--m), auto);
   		gap: var(--g);
 	}
