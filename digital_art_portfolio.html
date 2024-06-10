@@ -59,10 +59,11 @@
   		--w: calc((100vw - (var(--m) - 1) * var(--g) - 2 * var(--m) * var(--g) - 40px) / var(--m)); /* control the width */
 
   		display: grid;
-  		gap: var(--g);
+		aspect-ratio: 1;
   		width: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g));
-  		height: calc(var(--n)*var(--h) + (var(--n) - 1)*var(--g));
+  		<!-- height: calc(var(--n)*var(--h) + (var(--n) - 1)*var(--g)); -->
   		grid-template-columns: repeat(var(--m), auto);
+  		gap: var(--g);
 	}
 </style>
 
