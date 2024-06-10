@@ -38,25 +38,23 @@
 		padding: 20px;
 		border-bottom: 5px solid #fd800b;
 	}
-	.images {
-		vertical-align: middle;
-		height: 30%;
-		width: 30%;
-		border: 2px solid white;
-		margin-top: 2px;
-		margin-bottom: 2px;
-		margin-left: 2px;
-		margin-right: 2px;
-	}
-	.images:hover {
-		border: 2px solid #fd800b;
-	}
-	.grid-container {
-  		grid-template-columns: 30% 30% 30%;
-		justify-content: space-evenly; 
-		justify-items: center;
+	.gallery {
+  		--n: 3; /* number of rows*/
+  		--m: 4; /* number of columns */
+  		--h: calc(100vh / var(--n)); /* control the height */
+  		--w: calc(100vw / var(--m)); /* control the width */
+  		--g: 10px; /* control the gap */
+  		--f: 1.5; /* control the scale factor */
+
   		display: grid;
-		gap: auto 1%;
+  		gap: var(--g);
+  		width: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g));
+  		height: calc(var(--n)*var(--h) + (var(--n) - 1)*var(--g));
+  		grid-template-columns: repeat(var(--m), auto);
+	}
+	.gallery img:hover{
+  		width: calc(var(--w)*var(--f));
+  		height: calc(var(--h)*var(--f));
 	}
 </style>
 
@@ -64,30 +62,30 @@
 	<div class="header"><strong>Digital Art Portfolio</strong></div>
 
 	<div class="lightbackground">
-		<div class="grid-container">
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_00.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_00.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_01.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_01.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_02.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_02.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_03.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_03.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_04.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_04.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_05.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_05.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_06.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_06.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_07.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_07.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_08.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_08.jpg"></a></div>
+		<div class="gallery">
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_00.jpg" target="_blank"><img src="/portfolio/digital_art_00.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_01.jpg" target="_blank"><img src="/portfolio/digital_art_01.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_02.jpg" target="_blank"><img src="/portfolio/digital_art_02.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_03.jpg" target="_blank"><img src="/portfolio/digital_art_03.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_04.jpg" target="_blank"><img src="/portfolio/digital_art_04.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_05.jpg" target="_blank"><img src="/portfolio/digital_art_05.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_06.jpg" target="_blank"><img src="/portfolio/digital_art_06.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_07.jpg" target="_blank"><img src="/portfolio/digital_art_07.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_08.jpg" target="_blank"><img src="/portfolio/digital_art_08.jpg"></a>
 		</div>
 	</div>
 
 	<div class="darkbackground">
-		<div class="grid-container">
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_10.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_10.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_11.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_11.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_12.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_12.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_13.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_13.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_14.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_14.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_15.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_15.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_16.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_16.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_17.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_17.jpg"></a></div>
-		<div class="grid-item"><a href="https://jakobhelton.github.io/portfolio/digital_art_18.jpg" target="_blank"><img class="images" src="/portfolio/digital_art_18.jpg"></a></div>
+		<div class="gallery">
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_10.jpg" target="_blank"><img src="/portfolio/digital_art_10.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_11.jpg" target="_blank"><img src="/portfolio/digital_art_11.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_12.jpg" target="_blank"><img src="/portfolio/digital_art_12.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_13.jpg" target="_blank"><img src="/portfolio/digital_art_13.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_14.jpg" target="_blank"><img src="/portfolio/digital_art_14.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_15.jpg" target="_blank"><img src="/portfolio/digital_art_15.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_16.jpg" target="_blank"><img src="/portfolio/digital_art_16.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_17.jpg" target="_blank"><img src="/portfolio/digital_art_17.jpg"></a>
+			<a href="https://jakobhelton.github.io/portfolio/digital_art_18.jpg" target="_blank"><img src="/portfolio/digital_art_18.jpg"></a>
 		</div>
 	</div>
 </body>
