@@ -14,18 +14,18 @@
 
 <style>
 	:root {
-  		--n: 3; /* number of rows*/
-  		--m: 3; /* number of columns */
-  		--g: 10px; /* control the gap */
+  		--r: 3; /* number of rows*/
+  		--c: 3; /* number of columns */
   		--b: 2px; /* control the border */
+  		--m: 10px; /* control the margin */
   		--p: 20px; /* control the padding */
-  		--h: calc((100vh - (var(--n) - 1) * var(--g) - 2 * var(--n) * var(--b) - 2 * var(--p)) / var(--n)); /* control the height */
-  		--w: calc((100vw - (var(--m) - 1) * var(--g) - 2 * var(--m) * var(--b) - 2 * var(--p)) / var(--m)); /* control the width */
+  		--h: calc((100vh - (var(--r) - 1) * var(--m) - 2 * (var(--r) * var(--b) + var(--p) + var(--m))) / var(--r)); /* control the height */
+  		--w: calc((100vw - (var(--c) - 1) * var(--m) - 2 * (var(--c) * var(--b) + var(--p) + var(--m))) / var(--c)); /* control the width */
 	}
     	body {
 		font-family: 'IBM Plex Serif';
 		background: black;
-		margin: 0 15px;
+		margin: 0 var(--m);
 	}
 	.header {
 		text-align: center;
@@ -58,10 +58,10 @@
 	.gallery {
   		display: grid;
 		padding: var(--p);
-  		height: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g));
-  		width: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g));
-  		grid-template-columns: repeat(var(--m), auto);
-  		gap: var(--g);
+  		height: calc(var(--c)*var(--w) + (var(--c) - 1)*var(--m));
+  		width: calc(var(--c)*var(--w) + (var(--c) - 1)*var(--m));
+  		grid-template-columns: repeat(var(--c), auto);
+  		gap: var(--m);
 	}
 </style>
 
