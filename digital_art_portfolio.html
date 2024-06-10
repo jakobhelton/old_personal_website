@@ -39,24 +39,29 @@
 		border-bottom: 5px solid #fd800b;
 	}
 	.images{
+  		--n: 3; /* number of rows*/
+  		--m: 3; /* number of columns */
+  		--g: 10px; /* control the gap */
+		
   		border: 2px solid white;
+  		height: calc((100vh - (var(--n) - 1) * var(--g)) / var(--n));
+  		width: calc((100vw - (var(--m) - 1) * var(--g)) / var(--m));
+	}
+	.images:hover{
+  		border: 2px solid #fd800b;
 	}
 	.gallery {
   		--n: 3; /* number of rows*/
   		--m: 3; /* number of columns */
+  		--g: 10px; /* control the gap */
   		--h: calc((100vh - (var(--n) - 1) * var(--g)) / var(--n)); /* control the height */
   		--w: calc((100vw - (var(--m) - 1) * var(--g)) / var(--m)); /* control the width */
-  		--g: 10px; /* control the gap */
-  		--f: 1.5; /* control the scale factor */
 
   		display: grid;
   		gap: var(--g);
   		width: calc(var(--m)*var(--w) + (var(--m) - 1)*var(--g));
   		height: calc(var(--n)*var(--h) + (var(--n) - 1)*var(--g));
   		grid-template-columns: repeat(var(--m), auto);
-	}
-	.gallery images:hover{
-  		border: 2px solid #fd800b;
 	}
 </style>
 
