@@ -11,11 +11,6 @@ nav {
     overflow: hidden;
 }
 
-header img {
-    height: 80px;
-    margin-left: 40px;
-}
-
 header {
     position: fixed;
     top: 0;
