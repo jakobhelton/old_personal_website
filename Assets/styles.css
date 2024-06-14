@@ -88,8 +88,38 @@ h2 {
 
 .about-container {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: aliceblue;
+}
+
+.publications-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: aliceblue;
+}
+
+.portfolios-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: aliceblue;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: aliceblue;
+}
+
+.misc-container {
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
